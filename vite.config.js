@@ -3,6 +3,14 @@ import react from "@vitejs/plugin-react";
 import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react(), eslint()],
-});
+// vite.config.js
+export default {
+  server: {
+    proxy: {
+      "/cities": {
+        target: "http://localhost:9000",
+        changeOrigin: true,
+      },
+    },
+  },
+};
