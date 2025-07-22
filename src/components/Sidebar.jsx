@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import AppNav from "./AppNav";
 import Logo from "./Logo";
 import styles from "./Sidebar.module.css";
+import React from "react";
 
 function Sidebar() {
   return (

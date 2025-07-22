@@ -1,4 +1,6 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
+import React from "react";
+
 import {
   MapContainer,
   TileLayer,

@@ -3,6 +3,7 @@ import styles from "./CityList.module.css";
 import CityItem from "./CityItem";
 import Message from "./Message";
 import { useCities } from "../contexts/CitiesContext";
+import React from "react";
 
 function CityList() {
   const { cities, isLoading } = useCities();

@@ -4,6 +4,7 @@ import { useCities } from "../contexts/CitiesContext";
 import BackButton from "./BackButton";
 import styles from "./City.module.css";
 import Spinner from "./Spinner";
+import React from "react";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
