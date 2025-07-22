@@ -1,0 +1,1 @@
+import{L as o}from"./index-D0S6_-xb.js";const e="_logo_7b2ls_1",t={logo:e};function s(){return React.createElement(o,{to:"/"},React.createElement("img",{src:"/logo.png",alt:"WorldWise logo",className:t.logo}))}export{s as L};

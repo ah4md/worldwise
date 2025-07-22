@@ -2,9 +2,11 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import eslint from "vite-plugin-eslint";
 
-// https://vitejs.dev/config/
-// vite.config.js
-export default {
+export default defineConfig({
+  plugins: [react(), eslint()],
+  esbuild: {
+    jsxInject: `import React from 'react'`,
+  },
   server: {
     proxy: {
       "/cities": {
@@ -13,4 +15,4 @@ export default {
       },
     },
   },
-};
+});
